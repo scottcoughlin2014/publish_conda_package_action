@@ -1,9 +1,9 @@
-name: 'Publish Conda package Action'
+name: 'Publish POSYDON conda package'
 description: 'Publish conda package'
 author: 'amauryval'
 branding:
   icon: 'package'  
-  color: 'purple'
+  color: 'blue'
 inputs: 
   CondaDir:
     description: 'directory containing your meta.yml file'
@@ -13,7 +13,7 @@ inputs:
     default: 'conda-forge'
   Platforms: 
     description: 'input plaftorms'
-    default: 'osx-64 linux-32 linux-64 win-32 win-64'
+    default: 'noarch'
   CondaUsername:
     description: 'conda Username'
     required: true
