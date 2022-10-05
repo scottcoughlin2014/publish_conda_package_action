@@ -20,6 +20,9 @@ inputs:
   CondaPassword:
     description: 'conda Password'
     required: true
+  CondaChannel:
+    description: 'conda Channel to upload to'
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
