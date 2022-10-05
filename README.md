@@ -28,6 +28,7 @@ jobs:
         Platforms: 'osx-64 linux-32 linux-64 win-32 win-64 noarch'
         CondaUsername: ${{ secrets.CONDA_USERNAME }}
         CondaPassword: ${{ secrets.CONDA_PASSWORD }}
+        CondaChannel: 'either your conda user name or organization name'
 ```
 
 * Configure CONDA_USERNAME and CONDA_PASSWORD secrets on your settings repository
