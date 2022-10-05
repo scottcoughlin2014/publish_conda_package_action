@@ -61,6 +61,6 @@ anaconda login --username $INPUT_CONDAUSERNAME --password $INPUT_CONDAPASSWORD
 find temp_build/ -name *.tar.bz2 | while read file
 do
     echo $file
-    anaconda upload $file
+    anaconda upload --user $INPUT_CONDACHANNEL $file
 done
 
