@@ -7,7 +7,9 @@ Starting 2.0.0, it uses mamba (from [boa](https://boa-build.readthedocs.io/en/la
 ```yaml
 name: Publish
 
-on: [release]
+on:
+  release:
+    types: [published]
 
 jobs:
   publish:
