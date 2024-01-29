@@ -1,6 +1,6 @@
 FROM condaforge/mambaforge:latest
 
-RUN mamba install -c conda-forge boa
+RUN mamba install -c conda-forge boa anaconda-client conda-verify
 
 COPY entrypoint.sh /entrypoint.sh
 
